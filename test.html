@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="validate.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+	 console.dir(navigator);
+	//console.log(decodeURIComponent(decodeURIComponent('https%253A%252F%252Fs3.amazonaws.com%252Fcraze-stageTest%252Favatar%252Fori-img-zlPxfY5pErKXtZhBxcGbUFLh9pMEC1O2cuqiilxMC7zWXHokJUltqXApccUF.gif'))); 
+$("#submit").click(function(){
+	 $("#test").valid(); 		   
+		 //  checkvaild();   	
+	 });
+});
+</script>
+</head>
+
+<body>
+
+<form name="test" method="post" id="test">
+F NAME :<input type="text" name="fname" class="required"  title="Please Enter F Name"/><br />
+L NAME :<input type="text" name="lname" class="required" title="Please Enter L Name" /><br />
+TEST1  :<input type="text" name="test1" class="required" title="Please Enter TEST1"/><br />
+TEST2  :<input type="text" name="test2" class="required" title="Please Enter TEST2"/><br />
+TEST3  :<input type="text" name="test3" class="required" title="Please Enter TEST3"/><br />
+TEST4  :<input type="text" name="test4" class="required" title="Please Enter TEST4"/><br />
+<input type="button" name="submit" id="submit" value="submit" />
+</form>
+
+</body>
+</html>
